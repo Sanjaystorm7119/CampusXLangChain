@@ -1,0 +1,17 @@
+{
+    "name": null,
+    "input_variables": [
+        "length_input",
+        "paper_input",
+        "style_input"
+    ],
+    "optional_variables": [],
+    "output_parser": null,
+    "partial_variables": {},
+    "metadata": null,
+    "tags": null,
+    "template": "\nPlease summarize the following research paper in a {style_input} style with a {length_input} length:\nPaper: {paper_input}\n1. Mathematical concepts:\n- include relevant equations and their explanations\n- provide examples of how these concepts are applied in the paper\n2. Analogies:\n- use analogies to explain complex concepts in a simple way\n\nif certain information is not available in the paper, please state that \"insufficient information\".\nensure that the summary is comprehensive and covers all key points of the paper with proper style and length .\n",
+    "template_format": "f-string",
+    "validate_template": true,
+    "_type": "prompt"
+}
