@@ -18,7 +18,7 @@ structured_model =model.with_structured_output(Review,method="function_calling")
 result = structured_model.invoke("""the hardware is great, but the software is terrible.
                           there is no way to use it without a phone app, which is very buggy.
                         I would not recommend this product to anyone.
-                                 review by is John Doe.
+                                 review by .
                                  """)
 result = result.model_dump()
 print(result)
