@@ -14,7 +14,7 @@ if certain information is not available in the paper, please state that "insuffi
 ensure that the summary is comprehensive and covers all key points of the paper with proper style and length .
 ''',
     input_variables=["paper_input", "style_input", "length_input"],
-    validate_template=True
+    validate_template=True #automatically validate placeholders
 )
 
 template.save("template.json")

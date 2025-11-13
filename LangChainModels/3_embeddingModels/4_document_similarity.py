@@ -11,12 +11,12 @@ document=[
     "Virat kohli is known for his aggressive batting and leadership"
 ]
 
-query = "tell me about Virat"
+query = "tell me about Sanjay"
 
 documentEmbeddings = embedding.embed_documents(document)
 queryEmbeddings = embedding.embed_query(query)
 
-scores=(cosine_similarity([queryEmbeddings],documentEmbeddings)[0])
+scores=(cosine_similarity([queryEmbeddings],documentEmbeddings)[0]) #should be in 2D in cosineSimilarity
 
 index,score=(sorted(list(enumerate(scores)),key=lambda x:x[1])[-1])
 

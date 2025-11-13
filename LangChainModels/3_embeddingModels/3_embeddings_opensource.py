@@ -7,3 +7,6 @@ docs=["Delhi is the capital of India",
       ]
 vector = embedding.embed_documents(docs)
 print(vector)
+print(len(vector))
+for lis in vector:
+    print(len(lis))

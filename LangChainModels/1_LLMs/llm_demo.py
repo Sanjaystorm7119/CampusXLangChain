@@ -6,7 +6,6 @@ load_dotenv()
 
 llm = OpenAI(model="gpt-3.5-turbo-instruct")
 # llm = GoogleGenerativeAI(model="gemini-2.5-flash")
-
  
 inputstr = input("enter prompt: ")
 while inputstr not in ["exit","bye"]:
